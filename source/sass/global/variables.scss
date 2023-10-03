@@ -1,0 +1,33 @@
+// Color
+:root {
+  --basic-white: #ffffff;
+  --basic-gray: #bdbdbd;
+  --basic-dark: #333333;
+  --accent-primary: #7859cf;
+  --accent-secondary: #f0ebff;
+  --accent-primary-opacity: rgba(120, 89, 207, 0.25);
+  --accent-primary-light: #9070ec;
+  --accent-primary-dark: #593cac;
+  --light-gray: #e2e2e2;
+  --background-light: #f8f8f8;
+  --background-flat-white: #f3ebe1;
+  --background-lavande: #eae6fc;
+  --background-gray: #e5e6e8;
+}
+
+// BreakPoints
+
+$tw: 768px;
+$dw: 1440px;
+
+@mixin tw {
+  @media (min-width: $tw) {
+    @content;
+  }
+}
+
+@mixin dw {
+  @media (min-width: $dw) {
+    @content;
+  }
+}
