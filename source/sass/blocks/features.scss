@@ -1,0 +1,178 @@
+// Features
+
+.features {
+  padding-bottom: 60px;
+
+  @include tw {
+    padding-bottom: 100px;
+  }
+
+  @include dw {
+    padding-bottom: 120px;
+  }
+}
+
+.features__title-wrapper {
+  padding-top: 43px;
+  margin-bottom: 36px;
+  text-align: center;
+
+  @include tw {
+    margin-bottom: 61px;
+  }
+
+  @include dw {
+    padding-top: 95px;
+    margin-bottom: 79px;
+  }
+}
+
+.features__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: var(--basic-dark);
+
+  @include tw {
+    font-size: 42px;
+    line-height: 64px;
+  }
+}
+
+.features__badge {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+}
+
+// List
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  column-gap: 30px;
+  row-gap: 32px;
+  grid-template-columns: 1fr;
+
+  @include tw {
+    grid-template-columns: repeat(auto-fit, minmax(339px, 1fr));
+    row-gap: 50px;
+    column-gap: 10px;
+  }
+
+  @include dw {
+    grid-template-columns: repeat(4, 318px);
+    column-gap: 30px;
+  }
+}
+
+
+// Item
+
+.features__item {
+  position: relative;
+  padding-top: 66px;
+
+  @include tw {
+    padding-top: 0;
+    padding-left: 82px;
+  }
+
+  @include dw {
+    padding-top: 76px;
+    padding-left: 0;
+  }
+}
+
+.features__item-article {
+  text-align: center;
+  color: var(--basic-dark);
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    left: 50%;
+    width: 52px;
+    height: 56px;
+    top: 0;
+    transform: translateX(-50%);
+
+    @include tw {
+      left: 10px;
+      top: 1px;
+      transform: translateX(0);
+    }
+
+    @include dw {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &--speed::before {
+    background-image: url("../../images/icon-speed.svg");
+  }
+
+  &--fit::before {
+    background-image: url("../../images/icon-fit.svg");
+  }
+
+  &--energe::before {
+    background-image: url("../../images/energe.svg");
+  }
+
+  &--eco::before {
+    background-image: url("../../images/eco.svg");
+  }
+
+  @include tw {
+    text-align: left;
+  }
+
+  @include dw {
+    text-align: center;
+  }
+}
+
+// Title
+
+.features__item-title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  color: inherit;
+
+  @include tw {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+}
+
+// Description
+
+.features__item-description {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: inherit;
+
+  @include tw {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}

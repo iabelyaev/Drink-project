@@ -1,7 +1,6 @@
-const menuBurger = document.querySelector('.menu__burger');
-const list = document.querySelector('.menu__list');
+import initMenu from "./modules/burger.js";
+import init from "./modules/slider.js";
+import './modules/swiper.js';
+initMenu();
 
-menuBurger.addEventListener('click', () => {
-  list.classList.toggle('menu__list--opened');
-  menuBurger.classList.toggle('menu__burger--opened');
-})
+window.addEventListener('DOMContentLoaded', init)

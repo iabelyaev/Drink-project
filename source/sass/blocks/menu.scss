@@ -40,6 +40,7 @@
   text-decoration: none;
   color: var(--basic-dark);
   padding: 20px;
+  outline: 0;
 
   &::after {
     content: "";
@@ -123,6 +124,7 @@
 
   @include dw {
     column-gap: 20px;
+    row-gap: 10px;
   }
 }
 
