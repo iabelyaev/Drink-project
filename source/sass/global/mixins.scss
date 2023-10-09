@@ -1,0 +1,11 @@
+@mixin tw {
+  @media (min-width: $tw) {
+    @content;
+  }
+}
+
+@mixin dw {
+  @media (min-width: $dw) {
+    @content;
+  }
+}

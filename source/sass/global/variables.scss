@@ -19,15 +19,3 @@
 
 $tw: 768px;
 $dw: 1440px;
-
-@mixin tw {
-  @media (min-width: $tw) {
-    @content;
-  }
-}
-
-@mixin dw {
-  @media (min-width: $dw) {
-    @content;
-  }
-}
