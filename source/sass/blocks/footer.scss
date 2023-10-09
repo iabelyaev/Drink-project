@@ -31,7 +31,8 @@
 .footer__wrapper {
   padding-left: 20px;
   padding-right: 20px;
-
+  max-width: 1440px;
+  margin: 0 auto;
 
   @include dw {
     padding-left: 40px;
@@ -75,7 +76,7 @@
 
 .footer__navigation-item {
   padding: 20px;
-  padding-bottom: 26px;
+  padding-bottom: 25px;
   margin-left: -20px;
   margin-right: -20px;
   border-top: 1px solid var(--accent-secondary);
