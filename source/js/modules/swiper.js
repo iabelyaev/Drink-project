@@ -44,7 +44,7 @@ if (swiper) {
     showSlide()
   }
 
- function buttonPrevHandler () {
+  function buttonPrevHandler () {
     currentSlideIndex--
     showSlide()
   }

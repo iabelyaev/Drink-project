@@ -60,8 +60,7 @@
   }
 
   @media (any-hover: hover) {
-    &:hover,
-    .menu__link-icon:hover {
+    &:hover {
       color: var(--accent-primary);
     }
   }
@@ -219,7 +218,6 @@
 
 .menu__users-text {
   display: none;
-
 
   @include dw {
     display: inline-block;
